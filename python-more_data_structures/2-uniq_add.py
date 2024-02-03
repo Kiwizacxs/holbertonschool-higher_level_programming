@@ -5,6 +5,5 @@ def uniq_add(my_list=[]):
     for x in my_list:
         if x not in sum_list:
             sum_list.append(x)
-        x += 1
     add = sum(sum_list)
     return add
