@@ -2,7 +2,7 @@
 def uniq_add(my_list=[]):
     sum_list = []
     x = 0
-    while x != len(my_list) - 1:
+    for x in my_list:
         if x not in sum_list:
             sum_list.append(x)
         x += 1
