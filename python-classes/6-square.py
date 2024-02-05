@@ -6,8 +6,8 @@ class Square:
     """square class"""
     def __init__(self, size=0, position=(0, 0)):
         """initialize size"""
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
 
     def area(self):
         """return area of the square"""
@@ -48,7 +48,7 @@ class Square:
     def my_print(self):
         """print an square"""
         if self.__size == 0:
-            print("")
+            print()
         else:
             for x in range(self.__position[1]):
                 if self.__position[1] > 0:
@@ -57,4 +57,4 @@ class Square:
                 print(" " * self.__position[0], end="")
                 for i in range(self.__size):
                     print("#", end="")
-                print("")
+                print()
