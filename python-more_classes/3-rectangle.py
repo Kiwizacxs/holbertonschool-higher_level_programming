@@ -51,12 +51,11 @@ class Rectangle:
 
     def __str__(self):
         """str method that return a string"""
-        rectangle = ""
         if self.__width == 0 or self.__height == 0:
-            return rectangle
-        else:
-            for x in range(self.__height):
-                for i in range(self.__width):
-                    rectangle = rectangle + "#"
-                rectangle = rectangle + "\n"
-            return rectangle
+            return ""
+        rectangle = []
+        for x in range(self.__height):
+            for i in range(self.__width):
+                rectangle.append("#")
+            rectangle.append("\n")
+        return ("".join(rectangle))
