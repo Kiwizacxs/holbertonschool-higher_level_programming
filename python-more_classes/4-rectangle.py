@@ -33,10 +33,9 @@ class Rectangle:
         """set height attr"""
         if not isinstance(value, int):
             raise TypeError("heigth must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value
 
     def area(self):
         """return the area of the rectangle"""
@@ -45,9 +44,8 @@ class Rectangle:
     def perimeter(self):
         """return the area of the rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return 0
-        else:
-            return (self.__width + self.__height) * 2
+            return (0)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """str method that return a string"""
@@ -64,4 +62,3 @@ class Rectangle:
     def __repr__(self):
         """function that return a string"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
-        
