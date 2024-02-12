@@ -2,22 +2,22 @@
 my_list test
 -------------------
 
-> > > MyList = __import__("1-my_list").MyList
+>>> MyList = __import__("1-my_list").MyList
 
-> > > MyList([2, 4, 5])
+>>> MyList([2, 4, 5])
 [2, 4, 5]
 
-> > > MyList("")
+>>> MyList("")
 []
 
-> > > print(isinstance(MyList, list))
+>>> print(isinstance(MyList, list))
 False
 
-> > > MyList([])
+>>> MyList([])
 []
 
-> > > MyList([1])
+>>> MyList([1])
 [1]
 
-> > > MyList([1, -1])
+>>> MyList([1, -1])
 [1, -1]
