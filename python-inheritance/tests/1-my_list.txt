@@ -4,6 +4,10 @@ my_list test
 
 >>> MyList = __import__("1-my_list").MyList
 
+>>> isinstance(MyList, list)
+False
+>>> issubclass(MyList, list)
+True
 >>> MyList([2, 4, 5])
 [2, 4, 5]
 
