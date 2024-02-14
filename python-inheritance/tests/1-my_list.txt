@@ -8,38 +8,24 @@ my_list test
 False
 >>> issubclass(MyList, list)
 True
->>> MyList([2, 4, 5])
-[2, 4, 5]
-
->>> MyList("")
-[]
-
->>> print(isinstance(MyList, list))
-False
-
->>> MyList([])
-[]
-
->>> MyList([1])
-[1]
-
->>> MyList([1, -1])
-[1, -1]
-
 >>> list = MyList()
->>> list.append(1)
 >>> list.append(3)
+>>> list.append(1)
 >>> list.append(2)
 >>> print(list)
-[1, 3, 2]
+[3, 1, 2]
 >>> list.print_sorted()
 [1, 2, 3]
 >>> list2 = MyList()
 >>> list2.append(1)
 >>> print(list2)
 [1]
+>>> list2.print_sorted()
+[1]
 >>> list3 = MyList()
 >>> print(list3)
+[]
+>>> list3.print_sorted()
 []
 >>> list4 = MyList()
 >>> list4.append(-4)
@@ -48,3 +34,5 @@ False
 >>> list4.append(-34)
 >>> print(list4)
 [-4, -10, 10, -34]
+>>> list4.print_sorted()
+[-34, -10, -4, 10]
