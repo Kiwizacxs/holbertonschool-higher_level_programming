@@ -25,6 +25,7 @@ class BaseGeometry:
         an integer
         raise an Error if value is not int and
         raise an Error if value is less or equal 0
+        Name aways are a string.
         """
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
