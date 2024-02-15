@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Module that contain the class BaseGeometry
+with all his functions
 """
 
 
@@ -17,6 +18,6 @@ class BaseGeometry:
         an integer
         """
         if not isinstance(value, int):
-            raise TypeError(f"{name} must be an integer")
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError(f"{name} must be great than 0")
+            raise ValueError("{} must be great than 0".format(name))
