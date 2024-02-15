@@ -15,7 +15,7 @@ TypeError: Float must be an integer
 >>> value3 = BG()
 >>> value3.integer_validator("int<0", -1)
 Traceback (most recent call last):
-ValueError: int<0 must be great than 0
+ValueError: int<0 must be greater than 0
 
 >>> value4 = BG()
 >>> value4.integer_validator("string", "Holberton")
@@ -35,9 +35,14 @@ TypeError: BaseGeometry.integer_validator() missing 1 required positional argume
 >>> value7 = BG()
 >>> value7.integer_validator("zero", 0)
 Traceback (most recent call last):
-ValueError: zero must be great than 0
+ValueError: zero must be greater than 0
 
 >>> value8 = BG()
 >>> value8.integer_validator("tuple", ("A", 0))
 Traceback (most recent call last):
 TypeError: tuple must be an integer
+
+>>> value9 = BG()
+>>> value9.integer_validator()
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
