@@ -8,8 +8,10 @@ with all his methods and functions for now.
 class BaseGeometry:
     """
     Class BaseGeometry
+
     Contain the methods:
-    area() and integer_validator()
+    - area()
+    - integer_validator()
     """
     def area(self):
         """
@@ -21,6 +23,8 @@ class BaseGeometry:
         """
         function that valides that value is
         an integer
+        raise an Error if value is not int and
+        raise an Error if value is less or equal 0
         """
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
