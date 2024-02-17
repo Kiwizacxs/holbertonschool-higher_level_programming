@@ -80,4 +80,4 @@ class Rectangle(Base):
         """
         Set the y of the rectangle
         """
-        self.__y = y
+        self.__y = value
