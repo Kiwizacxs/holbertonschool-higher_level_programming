@@ -17,11 +17,19 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
+    @property
     def size(self):
         """
         get the value of size
         """
         return self.width
+
+    def size(self, value):
+        """
+        set value for size
+        """
+        self.width = value
+        self.height = value
 
     def __str__(self):
         """
