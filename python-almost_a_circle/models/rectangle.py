@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Module that contain the class
-Rectangle with all his functions
+Rectangle that inherits rom base
+with all his functions
 """
 
 
