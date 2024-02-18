@@ -18,6 +18,10 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
+        """
+        str function that return a string
+        with the attributes
+        """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} -\
  {self.width}"
 
