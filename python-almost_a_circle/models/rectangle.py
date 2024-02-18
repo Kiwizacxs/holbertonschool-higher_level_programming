@@ -116,19 +116,39 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """
+        Method to get the area of the rectangle
+        """
         return self.__height * self.__width
 
     def display(self):
+        """
+        Method to print the rectangle using a determinate
+        character
+        """
         print("\n" * self.__y, end="")
         for x in range(self.__height):
             print(" " * self.__x, end="")
             print("#" * self.__width)
 
     def __str__(self):
+        """
+        str function that return a string
+        with the attributes
+        """
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -\
  {self.__width}/{self.__height}"
 
     def update(self, *args):
+        """
+        that assigns an argument to each attribute:
+
+        1st argument should be the id attribute
+        2nd argument should be the width attribute
+        3rd argument should be the height attribute
+        4th argument should be the x attribute
+        5th argument should be the y attribute
+        """
         attr = ["id", "width", "height", "x", "y"]
         if args:
             if len(args) < len(attr):
