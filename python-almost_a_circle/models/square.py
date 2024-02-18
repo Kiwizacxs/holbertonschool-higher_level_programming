@@ -3,7 +3,7 @@
 Module that contain the class Square
 that inherits from Rectangle
 """
-from .rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -24,5 +24,3 @@ class Square(Rectangle):
         """
         return f"[Square] ({self.id}) {self.x}/{self.y} -\
  {self.width}"
-
-
