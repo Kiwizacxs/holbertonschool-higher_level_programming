@@ -17,6 +17,12 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
+    def size(self):
+        """
+        get the value of size
+        """
+        return self.width
+
     def __str__(self):
         """
         str function that return a string
