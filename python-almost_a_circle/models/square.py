@@ -51,7 +51,7 @@ class Square(Rectangle):
         4th argument should be the y attribute
         """
         attr = ["id", "size", "x", "y"]
-        if args:
+        if args and len(args) > 0:
             if len(args) < len(attr):
                 for x in range(len(args)):
                     setattr(self, attr[x], args[x])
