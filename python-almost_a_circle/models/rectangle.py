@@ -163,5 +163,10 @@ class Rectangle(Base):
         """
         Public method that return a dictionary with the attributes
         """
-        return {"x": self.x, "y": self.y, "id": self.id,
-                "heigth": self.height, "width": self.width}
+        return {
+                "x": self.x,
+                "y": self.y,
+                "id": self.id,
+                "heigth": self.height,
+                "width": self.width
+                }
