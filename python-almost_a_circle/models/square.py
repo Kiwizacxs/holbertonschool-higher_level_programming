@@ -57,6 +57,7 @@ class Square(Rectangle):
                     setattr(self, attr[x], args[x])
             if len(args) >= 4:
                 setattr(self, "y", args[3])
-        else:
+        elif kwargs:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                if kay in attr:
+                    setattr(self, key, value)
