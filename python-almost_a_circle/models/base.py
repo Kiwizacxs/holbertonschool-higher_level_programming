@@ -47,5 +47,3 @@ class Base:
                 for obj in list_objs:
                     _dict.append(obj.to_dictionary())
                 f.write(Base.to_json_string(_dict))
-
-
