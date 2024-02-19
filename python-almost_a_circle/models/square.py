@@ -54,7 +54,8 @@ class Square(Rectangle):
         if args and len(args) > 0:
             if len(args) < len(attr):
                 for x in range(len(args)):
-                    setattr(self, attr[x], args[x])
+                    if x < len(attr):
+                        setattr(self, attr[x], args[x])
             if len(args) >= 4:
                 setattr(self, "y", args[3])
         elif kwargs:
