@@ -29,5 +29,5 @@ class Base:
         Static method that return a dictionary in JSON format
         """
         if list_dictionaries is None or len(list_dictionaries) == 0:
-            return []
-        return json.dump(list_dictionaries)
+            return "[]"
+        return json.dumps(list_dictionaries)
