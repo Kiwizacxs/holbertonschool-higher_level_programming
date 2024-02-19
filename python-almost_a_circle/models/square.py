@@ -61,3 +61,14 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if key in attr:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        Public method that return a dictionary with the attributes
+        """
+        return {
+                "id": self.id,
+                "x": self.x,
+                "size": self.width,
+                "y": self.y
+                }
