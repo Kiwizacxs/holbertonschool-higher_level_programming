@@ -151,10 +151,14 @@ class Rectangle(Base):
         """
         attr = ["id", "width", "height", "x", "y"]
         if args:
-                for x in range(len(args)):
-                    setattr(self, attr[x], args[x])
+            for x in range(len(args)):
+                setattr(self, attr[x], args[x])
             if len(args) >= 5:
                 setattr(self, "y", args[4])
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        return {"x": self.x, "y": self.y, "id": self.id,
+            "heigth": self.height, "width": self.width}
