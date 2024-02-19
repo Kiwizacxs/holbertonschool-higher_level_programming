@@ -160,5 +160,8 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """
+        Public method that return a dictionary with the attributes
+        """
         return {"x": self.x, "y": self.y, "id": self.id,
             "heigth": self.height, "width": self.width}
