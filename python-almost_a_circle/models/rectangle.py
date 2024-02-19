@@ -151,7 +151,6 @@ class Rectangle(Base):
         """
         attr = ["id", "width", "height", "x", "y"]
         if args:
-            if len(args) < len(attr):
                 for x in range(len(args)):
                     setattr(self, attr[x], args[x])
             if len(args) >= 5:
