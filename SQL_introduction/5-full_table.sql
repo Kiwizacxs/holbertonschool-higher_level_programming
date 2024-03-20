@@ -1,2 +1,2 @@
---print full description of a table
+-- print full description of a table
 SHOW CREATE TABLE first_table;
