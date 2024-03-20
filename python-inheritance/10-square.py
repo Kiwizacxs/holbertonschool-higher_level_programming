@@ -32,6 +32,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """
     Clas that create a rectangle
@@ -44,7 +45,7 @@ class Rectangle(BaseGeometry):
         self.__height = height
         self.integer_validator("width", self.__width)
         self.integer_validator("height", self.__height)
-    
+
     def area(self):
         """Method that return the area of the trectangle"""
         return self.__height * self.__width
@@ -53,6 +54,7 @@ class Rectangle(BaseGeometry):
         """method that return a string"""
         return f"[Rectangle] {self.__width}/{self.__height}"
 
+
 class Square(Rectangle):
     """Class Rectangle"""
     def __init__(self, size):
@@ -60,7 +62,7 @@ class Square(Rectangle):
         self.__size = size
         self.integer_validator("size", self.__size)
         super().__init__(size, size)
-    
+
     def area(self):
         """return the area of the square"""
         return self.__size * self.__size
