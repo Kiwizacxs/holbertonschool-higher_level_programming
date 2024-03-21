@@ -1,4 +1,4 @@
--- Create a table second_table full if these not exists
+-- Create a full table if this not exists.
 CREATE TABLE IF NOT EXISTS second_table (id INT, name VARCHAR(256), score INT);
 
 INSERT INTO second_table(id, name, score)
